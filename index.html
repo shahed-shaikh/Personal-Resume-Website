@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>14. ADRIAN VALE — Personal Resume</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .reveal {
+            animation: reveal 1s ease both;
+        }
+
+        .portrait-reveal {
+            animation: portraitReveal 1.2s ease both;
+        }
+
+        .gold-line {
+            width: 0;
+            animation: lineGrow 1.2s ease forwards;
+        }
+
+        .work-item {
+            transition: background .35s ease, padding .35s ease;
+        }
+
+        .work-item:hover {
+            background: #f0e9df;
+            padding-left: 20px;
+        }
+
+        .nav-item {
+            transition: color .3s ease;
+        }
+
+        .nav-item:hover {
+            color: #a77c48;
+        }
+
+        .image-wrap img {
+            transition: transform .8s ease;
+        }
+
+        .image-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(35px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes portraitReveal {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes lineGrow {
+            to {
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#f7f3ed] text-[#29221f]">
+
+    <!-- NAVBAR -->
+
+    <nav class="px-6 md:px-16 py-7 flex justify-between items-center border-b border-[#29221f]/10">
+
+        <a href="#" class="font-extrabold tracking-[.18em] text-sm">
+            AV<span class="text-[#a77c48]">.</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-9 text-xs font-semibold uppercase tracking-widest">
+            <a href="#profile" class="nav-item">Profile</a>
+            <a href="#career" class="nav-item">Career</a>
+            <a href="#education" class="nav-item">Education</a>
+            <a href="#expertise" class="nav-item">Expertise</a>
+        </div>
+
+        <a href="#contact"
+           class="bg-[#542c32] text-white px-6 py-3 text-xs font-bold uppercase tracking-widest hover:bg-[#a77c48] transition duration-300">
+            Get in touch
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="px-6 md:px-16 pt-16 md:pt-24 pb-24">
+
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+
+            <div class="lg:col-span-7 reveal">
+
+                <p class="uppercase tracking-[.3em] text-[10px] font-bold text-[#a77c48] mb-8">
+                    Professional Profile / 2026
+                </p>
+
+                <h1 class="serif text-7xl md:text-8xl lg:text-[115px] leading-[.82] tracking-[-.04em]">
+                    Adrian
+                    <br>
+                    <span class="italic text-[#542c32]">Vale.</span>
+                </h1>
+
+                <div class="w-24 h-[2px] bg-[#a77c48] mt-10 gold-line"></div>
+
+                <h2 class="text-sm md:text-base font-bold uppercase tracking-[.18em] mt-9">
+                    Creative Director & Brand Strategist
+                </h2>
+
+                <p class="text-sm text-[#29221f]/60 leading-8 max-w-lg mt-6">
+                    I develop meaningful brand experiences by combining creative direction, strategic thinking and a strong understanding of visual communication.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-9">
+
+                    <a href="#career"
+                       class="bg-[#542c32] text-white px-7 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#a77c48] transition duration-300">
+                        View my experience
+                    </a>
+
+                    <a href="#contact"
+                       class="border border-[#29221f]/25 px-7 py-4 text-xs font-bold uppercase tracking-widest hover:border-[#542c32] transition duration-300">
+                        Contact me ↗
+                    </a>
+
+                </div>
+
+                <div class="grid grid-cols-3 gap-5 max-w-lg mt-16 border-t border-[#29221f]/15 pt-7">
+
+                    <div>
+                        <p class="serif text-4xl text-[#542c32]">08</p>
+                        <p class="text-[9px] uppercase tracking-widest text-[#29221f]/50 mt-2">Years in industry</p>
+                    </div>
+
+                    <div>
+                        <p class="serif text-4xl text-[#542c32]">46</p>
+                        <p class="text-[9px] uppercase tracking-widest text-[#29221f]/50 mt-2">Projects delivered</p>
+                    </div>
+
+                    <div>
+                        <p class="serif text-4xl text-[#542c32]">19</p>
+                        <p class="text-[9px] uppercase tracking-widest text-[#29221f]/50 mt-2">Brand partnerships</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="lg:col-span-5 portrait-reveal">
+
+                <div class="relative max-w-md ml-auto">
+
+                    <div class="absolute -top-5 -left-5 w-full h-full border border-[#a77c48]/50"></div>
+
+                    <div class="image-wrap relative h-[430px] md:h-[570px] overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1100&q=90"
+                            alt="Professional portrait of a creative professional"
+                            class="w-full h-full object-cover"
+                        >
+
+                    </div>
+
+                    <div class="absolute bottom-0 left-0 bg-[#542c32] text-white px-7 py-5">
+                        <p class="text-[9px] uppercase tracking-[.2em] text-white/60">
+                            Based in
+                        </p>
+                        <p class="serif text-2xl mt-1">
+                            London, United Kingdom
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- PROFILE -->
+
+    <section id="profile" class="bg-[#542c32] text-[#f7f3ed] px-6 md:px-16 py-24 md:py-32">
+
+        <div class="grid md:grid-cols-12 gap-12">
+
+            <div class="md:col-span-4">
+
+                <p class="text-[10px] uppercase tracking-[.3em] text-[#d6b78e] font-bold">
+                    01 / Personal Profile
+                </p>
+
+                <h2 class="serif text-5xl md:text-6xl mt-7">
+                    A little<br>about me.
+                </h2>
+
+            </div>
+
+
+            <div class="md:col-span-8">
+
+                <p class="serif text-3xl md:text-5xl leading-[1.25]">
+                    "Great creative work begins with curiosity, grows through collaboration and succeeds through clarity."
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-10 mt-12">
+
+                    <p class="text-sm leading-8 text-white/60">
+                        I am a creative professional with experience across brand development, visual storytelling and creative leadership. My approach is built around understanding people, identifying opportunities and turning ideas into purposeful work.
+                    </p>
+
+                    <p class="text-sm leading-8 text-white/60">
+                        I enjoy working with ambitious teams, exploring new perspectives and building thoughtful solutions that create lasting value for businesses and their audiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER -->
+
+    <section id="career" class="px-6 md:px-16 py-24 md:py-32">
+
+        <div class="flex flex-col md:flex-row justify-between md:items-end gap-8 mb-16">
+
+            <div>
+                <p class="text-[10px] uppercase tracking-[.3em] text-[#a77c48] font-bold mb-6">
+                    02 / Professional Journey
+                </p>
+
+                <h2 class="serif text-6xl md:text-8xl">
+                    Experience<span class="text-[#a77c48]">.</span>
+                </h2>
+            </div>
+
+            <p class="text-sm text-[#29221f]/55 leading-7 max-w-xs">
+                The roles, responsibilities and experiences that have shaped my professional journey.
+            </p>
+
+        </div>
+
+
+        <div class="border-t border-[#29221f]/20">
+
+            <article class="work-item grid md:grid-cols-12 gap-6 py-10 border-b border-[#29221f]/20">
+
+                <div class="md:col-span-2">
+                    <p class="text-xs font-bold text-[#a77c48]">2023 — Present</p>
+                </div>
+
+                <div class="md:col-span-7">
+
+                    <h3 class="serif text-4xl md:text-5xl">Creative Director</h3>
+
+                    <p class="text-xs uppercase tracking-widest text-[#29221f]/50 mt-3">
+                        Maison Creative / London
+                    </p>
+
+                    <p class="text-sm leading-7 text-[#29221f]/60 mt-6 max-w-xl">
+                        Directing brand strategy and creative projects, managing multidisciplinary teams and developing visual concepts for international clients.
+                    </p>
+
+                </div>
+
+                <div class="md:col-span-3 md:text-right">
+                    <span class="inline-block border border-[#a77c48]/50 px-4 py-2 text-[9px] uppercase tracking-widest">
+                        Current Position
+                    </span>
+                </div>
+
+            </article>
+
+
+            <article class="work-item grid md:grid-cols-12 gap-6 py-10 border-b border-[#29221f]/20">
+
+                <div class="md:col-span-2">
+                    <p class="text-xs font-bold text-[#a77c48]">2020 — 2023</p>
+                </div>
+
+                <div class="md:col-span-7">
+
+                    <h3 class="serif text-4xl md:text-5xl">Senior Brand Designer</h3>
+
+                    <p class="text-xs uppercase tracking-widest text-[#29221f]/50 mt-3">
+                        Form & Function / Manchester
+                    </p>
+
+                    <p class="text-sm leading-7 text-[#29221f]/60 mt-6 max-w-xl">
+                        Led brand identity projects, collaborated with marketing teams and created visual systems for emerging and established businesses.
+                    </p>
+
+                </div>
+
+                <div class="md:col-span-3 md:text-right">
+                    <span class="inline-block border border-[#29221f]/20 px-4 py-2 text-[9px] uppercase tracking-widest">
+                        Full Time
+                    </span>
+                </div>
+
+            </article>
+
+
+            <article class="work-item grid md:grid-cols-12 gap-6 py-10 border-b border-[#29221f]/20">
+
+                <div class="md:col-span-2">
+                    <p class="text-xs font-bold text-[#a77c48]">2018 — 2020</p>
+                </div>
+
+                <div class="md:col-span-7">
+
+                    <h3 class="serif text-4xl md:text-5xl">Visual Designer</h3>
+
+                    <p class="text-xs uppercase tracking-widest text-[#29221f]/50 mt-3">
+                        Studio North / Bristol
+                    </p>
+
+                    <p class="text-sm leading-7 text-[#29221f]/60 mt-6 max-w-xl">
+                        Developed campaign graphics, digital assets and brand communication materials while supporting senior creative teams.
+                    </p>
+
+                </div>
+
+                <div class="md:col-span-3 md:text-right">
+                    <span class="inline-block border border-[#29221f]/20 px-4 py-2 text-[9px] uppercase tracking-widest">
+                        Full Time
+                    </span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section id="education" class="bg-[#eae2d7] px-6 md:px-16 py-24 md:py-32">
+
+        <div class="grid md:grid-cols-12 gap-12">
+
+            <div class="md:col-span-4">
+
+                <p class="text-[10px] uppercase tracking-[.3em] text-[#a77c48] font-bold">
+                    03 / Education
+                </p>
+
+                <h2 class="serif text-6xl mt-7">
+                    Academic<br>Background.
+                </h2>
+
+            </div>
+
+
+            <div class="md:col-span-8 space-y-12">
+
+                <article class="flex flex-col md:flex-row justify-between gap-5 border-b border-[#29221f]/20 pb-10">
+
+                    <div>
+                        <p class="text-xs text-[#a77c48] font-bold">2015 — 2018</p>
+
+                        <h3 class="serif text-4xl mt-3">BA Visual Communication</h3>
+
+                        <p class="text-sm text-[#29221f]/55 mt-3">
+                            University of the Arts London
+                        </p>
+
+                        <p class="text-sm leading-7 text-[#29221f]/55 mt-5 max-w-lg">
+                            Focused on visual communication, creative direction, typography, brand identity and design research.
+                        </p>
+                    </div>
+
+                    <span class="text-[9px] uppercase tracking-widest text-[#29221f]/50">
+                        Bachelor's Degree
+                    </span>
+
+                </article>
+
+
+                <article class="flex flex-col md:flex-row justify-between gap-5 border-b border-[#29221f]/20 pb-10">
+
+                    <div>
+                        <p class="text-xs text-[#a77c48] font-bold">2013 — 2015</p>
+
+                        <h3 class="serif text-4xl mt-3">Foundation in Art & Design</h3>
+
+                        <p class="text-sm text-[#29221f]/55 mt-3">
+                            Central College of Arts
+                        </p>
+
+                        <p class="text-sm leading-7 text-[#29221f]/55 mt-5 max-w-lg">
+                            Built a strong foundation in visual arts, creative exploration and design principles.
+                        </p>
+                    </div>
+
+                    <span class="text-[9px] uppercase tracking-widest text-[#29221f]/50">
+                        Diploma
+                    </span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERTISE -->
+
+    <section id="expertise" class="px-6 md:px-16 py-24 md:py-32">
+
+        <div class="mb-16">
+
+            <p class="text-[10px] uppercase tracking-[.3em] text-[#a77c48] font-bold mb-6">
+                04 / Capabilities
+            </p>
+
+            <h2 class="serif text-6xl md:text-8xl">
+                Areas of Expertise.
+            </h2>
+
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <article class="border-t-2 border-[#542c32] pt-7">
+
+                <span class="serif text-4xl text-[#a77c48]">01</span>
+
+                <h3 class="serif text-3xl mt-8">Creative Leadership</h3>
+
+                <p class="text-sm leading-7 text-[#29221f]/55 mt-5">
+                    Creative direction, team management, project planning and strategic decision-making.
+                </p>
+
+            </article>
+
+
+            <article class="border-t-2 border-[#542c32] pt-7">
+
+                <span class="serif text-4xl text-[#a77c48]">02</span>
+
+                <h3 class="serif text-3xl mt-8">Brand Development</h3>
+
+                <p class="text-sm leading-7 text-[#29221f]/55 mt-5">
+                    Brand positioning, visual identity, storytelling and consistent communication systems.
+                </p>
+
+            </article>
+
+
+            <article class="border-t-2 border-[#542c32] pt-7">
+
+                <span class="serif text-4xl text-[#a77c48]">03</span>
+
+                <h3 class="serif text-3xl mt-8">Visual Communication</h3>
+
+                <p class="text-sm leading-7 text-[#29221f]/55 mt-5">
+                    Typography, editorial design, campaign concepts and digital visual experiences.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <div class="mt-24 grid md:grid-cols-2 gap-16">
+
+            <div>
+
+                <h3 class="text-xs uppercase tracking-[.2em] font-bold mb-9">
+                    Core Skills
+                </h3>
+
+                <div class="space-y-7">
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-3">
+                            <span>Creative Direction</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="h-[3px] bg-[#29221f]/10">
+                            <div class="h-full bg-[#a77c48] w-[95%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-3">
+                            <span>Brand Strategy</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-[3px] bg-[#29221f]/10">
+                            <div class="h-full bg-[#a77c48] w-[90%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-3">
+                            <span>Visual Design</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="h-[3px] bg-[#29221f]/10">
+                            <div class="h-full bg-[#a77c48] w-[92%]"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs mb-3">
+                            <span>Project Management</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="h-[3px] bg-[#29221f]/10">
+                            <div class="h-full bg-[#a77c48] w-[85%]"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3 class="text-xs uppercase tracking-[.2em] font-bold mb-9">
+                    Software & Tools
+                </h3>
+
+                <div class="flex flex-wrap gap-3">
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">Adobe Photoshop</span>
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">Illustrator</span>
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">InDesign</span>
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">Figma</span>
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">After Effects</span>
+
+                    <span class="border border-[#29221f]/20 px-5 py-4 text-xs">Notion</span>
+
+                </div>
+
+                <div class="mt-12">
+
+                    <h3 class="text-xs uppercase tracking-[.2em] font-bold mb-5">
+                        Languages
+                    </h3>
+
+                    <p class="text-sm text-[#29221f]/60 leading-8">
+                        English — Fluent
+                        <br>
+                        French — Intermediate
+                        <br>
+                        Spanish — Basic
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="bg-[#542c32] text-[#f7f3ed] px-6 md:px-16 py-24 md:py-32">
+
+        <div class="grid md:grid-cols-12 gap-12 items-end">
+
+            <div class="md:col-span-8">
+
+                <p class="text-[10px] uppercase tracking-[.3em] text-[#d6b78e] font-bold mb-8">
+                    05 / Contact
+                </p>
+
+                <h2 class="serif text-6xl md:text-8xl leading-[.95]">
+                    Let us make<br>
+                    <span class="italic text-[#d6b78e]">something</span><br>
+                    remarkable.
+                </h2>
+
+                <a href="mailto:hello@adrianvale.com"
+                   class="inline-flex items-center gap-6 mt-12 border-b border-[#d6b78e] pb-4 text-sm hover:text-[#d6b78e] transition">
+                    hello@adrianvale.com
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <div class="md:col-span-4">
+
+                <p class="text-sm leading-8 text-white/60 mb-9">
+                    Available for selected collaborations, creative opportunities and meaningful partnerships.
+                </p>
+
+                <div class="space-y-5 text-xs uppercase tracking-widest">
+
+                    <a href="#" class="block hover:text-[#d6b78e] transition">LinkedIn ↗</a>
+
+                    <a href="#" class="block hover:text-[#d6b78e] transition">Behance ↗</a>
+
+                    <a href="#" class="block hover:text-[#d6b78e] transition">Instagram ↗</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="bg-[#542c32] text-white px-6 md:px-16 pb-8">
+
+        <div class="border-t border-white/20 pt-7 flex flex-col md:flex-row justify-between gap-5 text-[9px] uppercase tracking-[.2em] text-white/50">
+
+            <p>© 2026 ADRIAN VALE</p>
+
+            <p>PERSONAL RESUME & PROFESSIONAL PROFILE</p>
+
+            <a href="#" class="hover:text-[#d6b78e] transition">Back to top ↑</a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
